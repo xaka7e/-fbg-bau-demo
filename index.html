@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#090b0c" />
+  <meta name="description" content="FBG Bau GmbH – Schalungsarbeiten in der ganzen Schweiz. Interaktiver Website-Prototyp." />
+  <title>FBG Bau — Wir bringen Beton in Form.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="FBG Bau Startseite">
+      <img class="brand-icon" src="assets/fbg-symbol.png" alt="" aria-hidden="true" /><span class="brand-word">FBG BAU</span><span class="brand-mark" aria-hidden="true"></span>
+      <small>GMBH</small>
+    </a>
+    <nav class="nav" id="site-nav" aria-label="Hauptnavigation">
+      <a href="#leistungen">Leistungen</a><a href="#aktuell">Aktuell</a><a href="#projekte">Projekte</a><a href="#ueber-uns">Über uns</a><a href="#team">Team</a><a href="#karriere">Karriere</a><a href="#kontakt">Kontakt</a>
+    </nav>
+    <button class="menu-btn" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav">MENU</button>
+  </header>
+
+  <main id="top">
+    <section class="build-scroll" aria-label="Interaktive Baustelle">
+      <div class="sticky-stage">
+        <div class="hero-photo" aria-hidden="true"></div>
+        <div class="hero-fallback" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="hero-vignette" aria-hidden="true"></div><div class="grain" aria-hidden="true"></div>
+
+        <div class="hero-copy">
+          <div class="hero-brandline"><span>FBG</span><b>BAU GMBH</b></div>
+          <div class="story-copy" id="storyCopy">
+            <p class="eyebrow" id="heroEyebrow">SCHALUNGSUNTERNEHMUNG · SCHWEIZ</p>
+            <h1 id="heroHeadline">WIR BRINGEN<br><span>BETON IN FORM.</span></h1>
+            <p class="lead" id="heroLead">Präzise Schalungsarbeiten. Eingespielte Teams. Leistung, die auf der Baustelle sichtbar wird.</p>
+            <p class="hero-fact" id="heroFact">SEIT 1995 · SCHWEIZWEIT</p>
+          </div>
+          <div class="scroll-hint"><span></span>SCROLLEN & BAUEN</div>
+        </div>
+
+        <div class="build-ui" aria-hidden="true">
+          <div class="step-label"><span id="stepNo">01</span><b id="stepText">Material aufnehmen</b></div>
+          <div class="progress-track"><i id="progressBar"></i></div>
+        </div>
+
+        <svg class="construction" viewBox="0 0 1400 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs>
+            <linearGradient id="steel" x1="0" x2="1"><stop offset="0" stop-color="#403829"/><stop offset=".5" stop-color="#f0bd42"/><stop offset="1" stop-color="#6d5622"/></linearGradient>
+            <linearGradient id="concrete" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#4d5255"/><stop offset="1" stop-color="#202427"/></linearGradient>
+            <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#000" flood-opacity=".55"/></filter>
+          </defs>
+
+          <g class="building" transform="translate(675 340)">
+            <rect x="0" y="300" width="565" height="42" rx="2" fill="url(#concrete)"/>
+            <rect x="32" y="90" width="30" height="210" fill="#3c4144"/><rect x="202" y="90" width="30" height="210" fill="#3c4144"/><rect x="372" y="90" width="30" height="210" fill="#3c4144"/><rect x="520" y="90" width="30" height="210" fill="#3c4144"/>
+            <rect class="new-slab" x="0" y="86" width="565" height="26" fill="#858b8e" opacity="0"/>
+            <g class="rebar" stroke="#757b7d" stroke-width="5"><path d="M50 88V0M220 88V0M390 88V0M535 88V0"/><path d="M38 22h510M38 52h510" opacity=".45"/></g>
+          </g>
+
+          <g class="material-stack" transform="translate(452 694)" filter="url(#shadow)"><rect x="0" y="10" width="220" height="18" rx="3" fill="#6e5320"/><rect x="10" y="32" width="205" height="18" rx="3" fill="#4f3d18"/><rect x="18" y="52" width="188" height="16" rx="3" fill="#3d2e15"/><rect x="38" y="-2" width="144" height="14" rx="3" fill="#989ea1"/><rect x="50" y="-22" width="120" height="20" rx="3" fill="#73797c"/></g>
+
+          <g class="crane" shape-rendering="geometricPrecision">
+            <!-- clean, straight mast -->
+            <g class="mast" fill="none" stroke-linecap="square" stroke-linejoin="miter">
+              <path d="M1132 785V165M1178 785V165" stroke="#d6a62d" stroke-width="7"/>
+              <path d="M1132 165H1178M1132 225H1178M1132 285H1178M1132 345H1178M1132 405H1178M1132 465H1178M1132 525H1178M1132 585H1178M1132 645H1178M1132 705H1178M1132 765H1178" stroke="#8b6b22" stroke-width="4"/>
+              <path d="M1132 165l46 60-46 60 46 60-46 60 46 60-46 60 46 60-46 60 46 60-46 60" stroke="#c4942a" stroke-width="4" opacity=".9"/>
+            </g>
+
+            <!-- straight tower-crane jib / truss -->
+            <g class="jib" fill="none" stroke-linecap="square" stroke-linejoin="miter">
+              <path d="M360 145H1180M360 184H1180" stroke="#d8a72d" stroke-width="7"/>
+              <path d="M390 145l45 39 45-39 45 39 45-39 45 39 45-39 45 39 45-39 45 39 45-39 45 39 45-39 45 39 45-39 45 39 45-39" stroke="#8f6c21" stroke-width="4" opacity=".95"/>
+              <path d="M1155 145h180M1155 184h180M1188 145l43 39 43-39 43 39" stroke="#b88a25" stroke-width="6"/>
+              <path d="M1155 145l74-78 106 78" stroke="#c89a29" stroke-width="6"/>
+            </g>
+
+            <g class="crane-brand" transform="translate(0 30)">
+              <rect x="1042" y="94" width="180" height="68" rx="6" fill="#e0ad30"/>
+              <image href="assets/fbg-symbol.png" x="1054" y="110" width="32" height="32" preserveAspectRatio="xMidYMid meet"/><image href="assets/fbg-wordmark.svg" x="1088" y="105" width="122" height="42" preserveAspectRatio="xMidYMid meet"/>
+            </g>
+          </g>
+
+          <!-- synchronized lifting system: trolley, cable, hook, slings and panel -->
+          <g id="liftSystem">
+            <rect id="trolley" x="523" y="143" width="54" height="43" rx="4" fill="#e0ad30" stroke="#5c4518" stroke-width="3"/>
+            <line id="cable" x1="550" y1="186" x2="550" y2="360" stroke="#d5d8d9" stroke-width="3"/>
+            <g id="hook" transform="translate(550 360)">
+              <rect x="-7" y="-6" width="14" height="18" rx="4" fill="#c69527"/>
+              <path d="M0 10v22c0 22 37 24 39 3" fill="none" stroke="#e0ad30" stroke-width="7" stroke-linecap="round"/>
+            </g>
+            <line id="slingLeft" x1="550" y1="390" x2="475" y2="650" stroke="#c9cdce" stroke-width="3" opacity="0"/>
+            <line id="slingRight" x1="550" y1="390" x2="625" y2="650" stroke="#c9cdce" stroke-width="3" opacity="0"/>
+            <g id="panel" transform="translate(455 650)" filter="url(#shadow)">
+              <rect x="0" y="0" width="190" height="105" rx="4" fill="#b98525" stroke="#e2bb62" stroke-width="4"/>
+              <path d="M12 14h166v77H12zM12 52h166M52 14v77M95 14v77M138 14v77" fill="none" stroke="#3c2b15" stroke-width="5"/>
+            </g>
+          </g>
+        </svg>
+
+        <div class="worker" id="worker" aria-hidden="true">
+          <svg viewBox="0 0 310 560" role="img">
+            <defs>
+              <clipPath id="helmetLogoClip"><circle cx="160" cy="46" r="14"/></clipPath>
+            </defs>
+            <ellipse cx="155" cy="535" rx="94" ry="18" fill="rgba(0,0,0,.35)"/>
+            <path d="M114 157c-29 16-50 51-58 95l-22 123 47 8 29-101 10 133-28 115h52l18-103 21 103h52l-31-118 8-132 30 101 45-12-28-125c-10-42-31-72-62-88z" fill="#171a1c"/>
+            <path d="M104 162c29-25 77-28 108 0l28 96-48 24-9-35h-55l-10 35-48-24z" fill="#d3a62e"/>
+            <path d="M83 199h145l8 31H76z" fill="#dfe2e2" opacity=".7"/><path d="M98 278h115l-10 78H108z" fill="#c89a27"/>
+            <path d="M120 87c2-34 16-59 37-59 26 0 40 26 39 61 0 16-5 31-14 43h-46c-10-12-16-28-16-45z" fill="#c99472"/>
+            <path d="M111 70c7-38 25-56 49-56 30 0 50 23 52 64l-18 7-2-18-68 4-2 20-18-3z" fill="#e4e6e6"/><path d="M110 69h102" stroke="#b8bcbd" stroke-width="7"/>
+            <rect x="103" y="136" width="114" height="52" rx="4" fill="#e0ad30"/>
+            <image href="assets/fbg-wordmark.svg" x="111" y="144" width="98" height="30" preserveAspectRatio="xMidYMid meet"/>
+            <g class="helmet-logo" transform="rotate(-5 160 46)">
+              <circle cx="160" cy="46" r="15.5" fill="#f2f3f3" stroke="#c7cbcc" stroke-width="1.2"/>
+              <image href="assets/fbg-symbol.png" x="146" y="32" width="28" height="28" preserveAspectRatio="xMidYMid meet" clip-path="url(#helmetLogoClip)"/>
+            </g>
+          </svg>
+        </div>
+
+        <div class="stage-note">Scroll steuert die Baustelle</div>
+      </div>
+    </section>
+
+    <section class="numbers section-dark" id="ueber-uns">
+      <div class="metric"><strong>30+</strong><span>Jahre Erfahrung</span></div><div class="metric"><strong>60+</strong><span>Mitarbeitende</span></div><div class="metric"><strong>550+</strong><span>Realisierte Projekte</span></div>
+      <div class="numbers-copy"><p>QUALITÄTSARBEIT SEIT 1995</p><h2>Schalung ist<br>unser Handwerk.</h2></div>
+    </section>
+
+    <section class="services section-pad" id="leistungen">
+      <div class="section-head"><div><p class="eyebrow">UNSERE LEISTUNGEN</p><h2>Für jede Form.<br>Für jede Höhe.</h2></div><p class="section-intro">FBG ist auf Gross- und Industriebauten spezialisiert und arbeitet mit eigenem Schalungsinventar effizient, flexibel und zuverlässig.</p></div>
+      <div class="service-grid">
+        <article><span>01</span><h3>Konventionelle Schalung</h3><p>Eigener Bestand an Spriess- und Trägersystemen mit einer Abdeckung von bis zu <b>50’000 m²</b>.</p></article>
+        <article><span>02</span><h3>STAXO 100</h3><p>Doka-Traggerüstsysteme für hohe Lasten, grosse Spannweiten, anspruchsvolle Decken und Ingenieurbauten.</p></article>
+        <article><span>03</span><h3>Dokamatic-Tische</h3><p>Schnelles Schalen grosser Deckenflächen. In Kombination mit DoKart plus effizient horizontal versetzbar.</p></article>
+        <article><span>04</span><h3>Deckenstützen</h3><p>Vom kleinsten Spriess bis zum 700er Deckenspriess – Inventar für unterschiedliche Bauhöhen.</p></article>
+        <article><span>05</span><h3>Personal im Aufwand</h3><p>Qualifiziertes Fachpersonal für komplette Bauphasen oder zur Unterstützung bei Arbeitsspitzen.</p></article>
+        <article class="service-accent"><span>+</span><h3>Sicherheit & Weiterbildung</h3><p>WORKcontrol registriert, geschult in Höhensicherung und Anschlagen von Lasten, regelmässige Weiterbildung.</p></article>
+      </div>
+    </section>
+
+    <section class="current section-pad" id="aktuell">
+      <div class="section-head"><div><p class="eyebrow">AKTUELLE BAUSTELLEN</p><h2>Gerade im Bau.</h2></div><p class="section-intro">Auswahl der aktuell auf der FBG-Website aufgeführten Projekte.</p></div>
+      <div class="current-list">
+        <article><div><span>2026 — AKTUELL</span><h3>Hochhaus Baufeld A1, Nidfeld</h3><p>Kriens LU · Auftraggeber: Amberg AG</p></div><strong>ca. 23’000 m²</strong><em>Deckenschalung</em></article>
+        <article><div><span>2025 — AKTUELL</span><h3>Neubau Suurstoffi</h3><p>Rotkreuz ZG · Auftraggeber: Anliker AG, LU</p></div><strong>ca. 25’000 m²</strong><em>Deckenschalung</em></article>
+        <article><div><span>2025 — AKTUELL</span><h3>Zentrum 104</h3><p>Neuenhof · Auftraggeber: Wettstein AG</p></div><strong>ca. 8’500 m²</strong><em>1. Etappe · Deckenschalung</em></article>
+        <article><div><span>2025 — AKTUELL</span><h3>Übergärten</h3><p>Schwamendingen ZH · Auftraggeber: Anliker AG, ZH</p></div><strong>25’000 + 30’000 m²</strong><em>Decken- & Wandschalung</em></article>
+        <article><div><span>2025 — AKTUELL</span><h3>Glattwiesse</h3><p>Schwamendingen ZH · Auftraggeber: Anliker AG, ZH</p></div><strong>ca. 27’000 m²</strong><em>Deckenschalung</em></article>
+        <article><div><span>2025 — AKTUELL</span><h3>ZHAW Winterthur</h3><p>Winterthur ZH · Auftraggeber: Anliker AG, ZH</p></div><strong>—</strong><em>Deckeninventar FBG Bau</em></article>
+        <article><div><span>2025 — AKTUELL</span><h3>Neubau Mühlequartier</h3><p>Wädenswil · Auftraggeber: Landis AG</p></div><strong>ca. 7’000 m²</strong><em>Deckeninventar FBG Bau</em></article>
+        <article><div><span>2024 — 2025</span><h3>Spital Wol</h3><p>Auftraggeber: Anliker AG, ZH</p></div><strong>ca. 27’000 m²</strong><em>Deckenschalung</em></article>
+      </div>
+    </section>
+
+    <section class="projects section-pad" id="projekte">
+      <div class="section-head"><div><p class="eyebrow">AUSGEWÄHLTE REFERENZEN</p><h2>Gebaut, nicht behauptet.</h2></div><p class="section-intro">Drei reale Projekte aus den FBG-Referenzen. Die Projektadressen wurden für den Prototyp separat geprüft.</p></div>
+      <article class="project project-featured" style="--project-image:url('https://www.dbz.de/imgs/1/8/7/0/3/1/6/Vulcano_-_Zurich_Altstetten__ZH__03_Kopie-5977f22ddc633e7f.jpeg')"><div class="project-bg"></div><div class="project-shade"></div><div class="project-index">01</div><div class="project-copy"><p>ZÜRICH · ALTSTETTEN</p><h3>VULCANO</h3><address>Vulkanstrasse 108–110<br>8048 Zürich</address><a href="https://www.fbg-bau.ch/referenzen/" target="_blank" rel="noreferrer">FBG Referenz ↗</a></div></article>
+      <div class="project-grid">
+        <article class="project" style="--project-image:url('https://assets.world-architects.com/images/Projects/93/25/65/86073a9fc72045e9b08afb2c1f4eb4c7/86073a9fc72045e9b08afb2c1f4eb4c7.6e7b65d0.jpg')"><div class="project-bg"></div><div class="project-shade"></div><div class="project-index">02</div><div class="project-copy"><p>ZÜRICH · ALTSTETTEN</p><h3>WESTLINK</h3><address>Vulkanplatz 11<br>8048 Zürich</address><a href="https://www.westlink.ch/" target="_blank" rel="noreferrer">Projektseite ↗</a></div></article>
+        <article class="project" style="--project-image:url('https://www.emchberger.ch/sites/default/files/Visualisierung%20Nidfeld%20Baufeld%20A1%2C%20Kriens.jpg')"><div class="project-bg"></div><div class="project-shade"></div><div class="project-index">03</div><div class="project-copy"><p>KRIENS · LUZERN</p><h3>NIDFELD A1</h3><address>Baufeld A1, Nidfeldstrasse<br>6010 Kriens</address><a href="https://www.losinger-marazzi.ch/de/projekte/226/nidfeld-kriens-tour-secteur-a1/" target="_blank" rel="noreferrer">Projektseite ↗</a></div></article>
+      </div>
+      <p class="rights-note">Prototyp: Projektbilder sind extern eingebunden. Für die finale Firmenwebsite FBG-eigene Fotos oder freigegebene Bildrechte verwenden.</p>
+    </section>
+
+    <section class="history section-pad">
+      <div class="history-title"><p class="eyebrow">UNSERE GESCHICHTE</p><h2>Von zwei Brüdern.<br>Zu rund 60 Fachkräften.</h2></div>
+      <div class="timeline">
+        <article><b>1995</b><h3>Der Anfang</h3><p>Bruno und Graziano Faoro bauen FBG als Schalungsunternehmen auf.</p></article>
+        <article><b>+10 JAHRE</b><h3>Vom Einzelunternehmen zur GmbH</h3><p>Nach zehn Jahren wird das Unternehmen in eine GmbH überführt.</p></article>
+        <article><b>2024</b><h3>Nächste Generation</h3><p>Die Geschäftsführung wird schrittweise an Justin Faoro übergeben; seit Mitte 2024 leitet er das Unternehmen.</p></article>
+        <article><b>HEUTE</b><h3>FBG Bau GmbH</h3><p>Rund 60 Mitarbeitende, Projekte jeder Grössenordnung und Schalungsarbeiten in der ganzen Schweiz.</p></article>
+      </div>
+    </section>
+
+    <section class="team section-pad" id="team">
+      <div class="section-head"><div><p class="eyebrow">TEAM FBG</p><h2>Erfahrung, die bleibt.</h2></div><p class="section-intro">Ein langjähriges Team ist ein Teil der Stärke von FBG. Viele Mitarbeitende arbeiten seit zehn, zwanzig Jahren oder länger gemeinsam.</p></div>
+      <div class="leadership">
+        <article><span>JF</span><div><h3>Justin Faoro</h3><p>Operativer Geschäftsführer</p></div></article>
+        <article><span>BF</span><div><h3>Bruno Faoro</h3><p>Inhaber · unterstützend tätig</p></div></article>
+        <article><span>GF</span><div><h3>Graziano Faoro</h3><p>Inhaber · Baustellenkoordinator</p></div></article>
+        <article><span>JF</span><div><h3>Jessica Faoro</h3><p>Kaufmännische Sachbearbeiterin</p></div></article>
+      </div>
+      <div class="loyalty"><p>20 JAHRE & MEHR</p><div><span>Joao</span><span>Zbigniew</span><span>Arlindo</span><span>Fernando</span></div><p>10 JAHRE & MEHR</p><div><span>Amorim</span><span>Urim</span><span>Selijm</span><span>Arek</span><span>Batista</span><span>Ribas</span></div></div>
+    </section>
+
+    <section class="careers section-pad" id="karriere">
+      <div class="career-copy"><p class="eyebrow">KARRIERE</p><h2>Wir suchen<br><span>Dich.</span></h2><p>Du arbeitest sauber, effizient und selbstständig mit Schalungssystemen? FBG sucht Verstärkung für das Team.</p><a class="cta" href="mailto:info@fbg-bau.ch">Jetzt melden <b>↗</b></a></div>
+      <div class="jobs"><article><small>OFFENE STELLE</small><h3>Gruppenführer</h3><span>→</span></article><article><small>OFFENE STELLE</small><h3>Schaler mit Grundkenntnissen</h3><span>→</span></article><article class="job-alt"><small>BÜRO / PROJEKTE</small><h3>Polier oder Bauführer</h3><span>→</span></article></div>
+    </section>
+
+    <section class="contact section-pad" id="kontakt">
+      <p class="eyebrow">KONTAKT</p><h2>Das nächste Projekt<br><span>nimmt Form an.</span></h2>
+      <div class="contact-grid"><div><small>FBG BAU GMBH</small><p>Seestrasse 112<br>8806 Bäch</p></div><div><small>TELEFON</small><a href="tel:+41763962798">+41 76 396 27 98</a></div><div><small>E-MAIL</small><a href="mailto:info@fbg-bau.ch">info@fbg-bau.ch</a></div><div><small>ÖFFNUNGSZEITEN</small><p>Mo–Fr · 08:00–12:00<br>13:00–17:00</p></div></div>
+    </section>
+  </main>
+
+  <footer><div class="footer-brand">FBG BAU<span></span><small>GMBH</small></div><p>WIR BRINGEN BETON IN FORM.</p><p>Schalungsarbeiten in der ganzen Schweiz.</p><a href="#top">Nach oben ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>

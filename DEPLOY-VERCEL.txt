@@ -1,0 +1,14 @@
+FBG Bau v2.8 — Vercel deploy
+
+Fastest method:
+1. Go to https://vercel.com/new
+2. Sign in / create a free account.
+3. Choose "Import Third-Party" / drag & drop the project folder if available, or create a GitHub repo and import it.
+4. Upload/import this folder: fbg-site-v2-8-vercel
+5. Framework Preset: Other
+6. Build Command: leave empty
+7. Output Directory: leave empty
+8. Install Command: leave empty
+9. Click Deploy
+
+Because this is a static site, Vercel should publish index.html directly.
